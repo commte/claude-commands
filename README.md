@@ -1,22 +1,13 @@
 # Claude Code Commands
 
 Claude Code で使えるカスタムコマンドを集めたリポジトリです。
-`.claude/commands/` ディレクトリに配置するだけで、開発補助・ログ記録・勤怠管理など、様々な操作を Claude に指示できるようになります。
+`.claude/commands/` ディレクトリに配置するだけで、打刻・ブログ記事作成・テストレポート生成など、様々な操作を Claude に指示できるようになります。
 
 ## 📦 現在収録されているコマンド
 
-| コマンド  | 説明                                                             |
-| --------- | ---------------------------------------------------------------- |
-| `/dakoku` | 出勤・退勤・休憩を打刻し、Markdown/JSON で記録。勤怠管理に使える |
-
-※ 今後、`/memo`, `/todo`, `/report`, `/focus` などの追加を予定しています。
-
-## 🛠 使い方（共通）
-
-```bash
-# プロジェクト直下で以下を実行
-mkdir -p .claude/commands
-
-# コマンドファイルを配置（例：/dakoku）
-curl -o .claude/commands/dakoku.md https://raw.githubusercontent.com/commte/claude-commands/main/.claude/commands/dakoku.md
-```
+| コマンド       | 説明                                                                 |
+| -------------- | -------------------------------------------------------------------- |
+| `/dakoku`      | 出勤・退勤・休憩を打刻し、Markdown/JSON で記録。勤怠管理に使える     |
+| `/blog`        | 最近の実装内容や技術的な取り組みを基に、技術ブログ記事を自動生成する |
+| `/playwright`  | Playwright を使って、Web アプリのテストを自動化する                  |
+| `/test-report` | テストレポートを生成する                                             |
